@@ -72,7 +72,7 @@ body{
 ## Parent Selectors
 
 ```scss
-  a{
+  a {
     color: white;
     &:hover: {text-decoration: underline;}
   }
