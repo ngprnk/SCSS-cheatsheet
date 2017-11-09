@@ -1,4 +1,4 @@
-# SCSS CheatSheet
+# SCSS Cheat Sheet
 
 ## Variables
 
