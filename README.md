@@ -26,19 +26,17 @@ body{
 
 ```
 
-## Mixins 
+## Mixins
 
 ```scss 
-  @mixin border-radius ($color){
-     -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+  @mixin border-radius($radius){
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
   }
 
-  .box {
-      @include border-radius(10px);
-    }
+  button {
+    @include border-radius(10px);
+  }
 
 ```
 
@@ -55,6 +53,29 @@ body{
    @extend .button;
    background-color: green;
  }
+
+
+```
+
+## Nesting
+```scss 
+
+// Elements can be Nested like so
+.container{
+  a{
+    color: red;
+  }
+}
+
+```
+
+## Parent Selectors
+
+```scss
+  a{
+    color: white;
+    &:hover: {text-decoration: underline;}
+  }
 
 
 ```
